@@ -13,13 +13,13 @@ link.setAttribute('download', title + '.txt');
 
 var date = document.querySelector('time').innerText;
 var author = document.querySelector('.top-matter .tagline .author').innerText;
-var newTagline = 'submitted ' + date + ' by ' + author
+var newTagline = 'submitted ' + date + ' by ' + author;
 
 var url = document.location.href;
 
 link.setAttribute('href', 'data:' + mimeType + ';charset=utf-8,' + encodeURIComponent(title + '\n\n[' + score + '] ' + newTagline + '\n\n' + bodyText + '\n\n----------\n' + url));
-// to do
-// parse the date field and make that a real date
-// work on new reddit
+// TODO
+// - parse the date field and make that a real date
+// - work on new reddit
 
 topMatter.appendChild(link);
