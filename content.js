@@ -20,6 +20,6 @@ var url = document.location.href;
 link.setAttribute('href', 'data:' + mimeType + ';charset=utf-8,' + encodeURIComponent(title + '\n\n[' + score + '] ' + newTagline + '\n\n' + bodyText + '\n\n----------\n' + url));
 // TODO
 // - parse the date field and make that a real date
-// - work on new reddit
+// - make this work on new reddit layout - may have to use JS paragraph detection
 
 topMatter.appendChild(link);
