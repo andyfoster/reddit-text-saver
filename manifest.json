@@ -1,9 +1,9 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Download Text Version of Reddit Article",
-    "description": "Puts a little green download button under title of articles and lets you download the text version of Reddit articles. (Only works with old.reddit.com)",
+    "description": "Puts a little green download button under title of articles and lets you download the text version of Reddit articles.",
     "version": "0.1",
-    "browser_action": {
+    "action": {
         "default_icon": {
             "16": "reddit-saver.png",
             "32": "reddit-saver.png",
@@ -19,7 +19,8 @@
     },
     "content_scripts": [{
         "matches": [
-            "https://old.reddit.com/*"
+            "https://old.reddit.com/*/comments/*",
+            "https://www.reddit.com/*/comments/*"
         ],
         "js": [
             "content.js"
