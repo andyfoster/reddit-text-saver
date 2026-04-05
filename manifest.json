@@ -1,21 +1,21 @@
 {
     "manifest_version": 3,
-    "name": "Download Text Version of Reddit Article",
-    "description": "Puts a little green download button under title of articles and lets you download the text version of Reddit articles.",
+    "name": "Reddit Post Saver",
+    "description": "Adds a download button to Reddit posts to save them as text files. Works with both old and new Reddit.",
     "version": "0.1",
     "action": {
         "default_icon": {
-            "16": "reddit-saver.png",
-            "32": "reddit-saver.png",
-            "48": "reddit-saver.png",
-            "128": "reddit-saver.png"
+            "16": "icon-16.png",
+            "32": "icon-32.png",
+            "48": "icon-48.png",
+            "128": "icon-128.png"
         }
     },
     "icons": {
-        "16": "reddit-saver.png",
-        "32": "reddit-saver.png",
-        "48": "reddit-saver.png",
-        "128": "reddit-saver.png"
+        "16": "icon-16.png",
+        "32": "icon-32.png",
+        "48": "icon-48.png",
+        "128": "icon-128.png"
     },
     "content_scripts": [{
         "matches": [
